@@ -46,5 +46,20 @@ variable "secrets" {
         MONGO_URL="mongodb://mongodb-dev.chaithanya.online:27017/users"
       }
     }
+
+    mysql = {
+      secret_mount = "roboshop-dev"
+      kv = {
+        ROOT_PASSWORD="RoboShop@1"
+      }
+    }
+
+    rabbitmq = {
+      secret_mount = "roboshop-dev"
+      kv = {
+        APP_USER="roboshop"
+        APP_PASSWORD="roboshop123"
+      }
+    }
   }
 }
