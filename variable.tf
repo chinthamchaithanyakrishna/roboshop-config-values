@@ -61,5 +61,13 @@ variable "secrets" {
         APP_PASSWORD="roboshop123"
       }
     }
+
+    shipping = {
+      secret_mount = "roboshop-dev"
+      kv = {
+        CART_ENDPOINT="cart-dev.chaithanya.online:8080"
+        DB_HOST="mysql-dev.chaithanya.online"
+      }
+    }
   }
 }
