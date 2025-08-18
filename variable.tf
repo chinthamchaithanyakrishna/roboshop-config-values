@@ -71,5 +71,18 @@ variable "secrets" {
         DB_PASS="RoboShop@1"
       }
     }
+
+    payment = {
+      secret_mount = "roboshop-dev"
+      kv = {
+        CART_HOST="cart-dev.chaithanya.online"
+        CART_PORT=8080
+        USER_HOST="user-dev.chaithanya.online"
+        USER_PORT=8080
+        AMQP_HOST="rabbitmq-dev.chaithanya.online"
+        AMQP_USER="roboshop"
+        AMQP_PASS="roboshop123"
+      }
+    }
   }
 }
