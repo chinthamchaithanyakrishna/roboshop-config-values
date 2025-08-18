@@ -18,6 +18,7 @@ variable "secrets" {
         CATALOGUE_PORT=8080
       }
     }
+
     frontend = {
       secret_mount = "roboshop-dev"
       kv = {
@@ -28,5 +29,14 @@ variable "secrets" {
         PAYMENT_URL="http://payment-dev.chaithanya.online:8080/"
       }
     }
+
+    catalogue = {
+      secret_mount = "roboshop-dev"
+      kv = {
+        MONGO="true"
+        MONGO_URL="mongodb://mongodb-dev.chaithanya.online:27017/catalogue"
+      }
+    }
+
   }
 }
