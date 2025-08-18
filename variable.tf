@@ -38,5 +38,13 @@ variable "secrets" {
       }
     }
 
+    user = {
+      secret_mount = "roboshop-dev"
+      kv = {
+        MONGO="true"
+        REDIS_URL="redis://redis-dev.chaithanya.online:6379"
+        MONGO_URL="mongodb://mongodb-dev.chaithanya.online:27017/users"
+      }
+    }
   }
 }
