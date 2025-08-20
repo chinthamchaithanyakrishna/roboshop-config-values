@@ -5,9 +5,9 @@ variable "secret-mounts" {
     roboshop-dev = {
       description = "RoboShop Project Dev Secrets"
     }
-    # roboshop-infra = {
-    #   description = "RoboShop Project infra Secrets"
-    # }
+    roboshop-infra = {
+      description = "RoboShop Project infra Secrets"
+    }
   }
 }
 
