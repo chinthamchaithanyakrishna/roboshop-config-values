@@ -30,6 +30,16 @@ variable "secrets" {
         CART_URL="http://cart-dev.chaithanya.online:8080/"
         SHIPPING_URL="http://shipping-dev.chaithanya.online:8080/"
         PAYMENT_URL="http://payment-dev.chaithanya.online:8080/"
+        CATALOGUE_HOST = "catalogue-dev.chaithanya.online"
+        CATALOGUE_PORT = "8080"
+        USER_HOST      = "user-dev.chaithanya.online"
+        USER_PORT      = "8080"
+        CART_HOST      = "cart-dev.chaithanya.online"
+        CART_PORT      = "8080"
+        SHIPPING_HOST  = "shipping-dev.chaithanya.online"
+        SHIPPING_PORT  = "8080"
+        PAYMENT_HOST   = "payment-dev.chaithanya.online"
+        PAYMENT_PORT   = "8080"
       }
     }
 
