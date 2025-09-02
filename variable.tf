@@ -104,12 +104,12 @@ variable "secrets" {
       }
     }
     #
-    ssh = {
-      secret_mount = "roboshop-infra"
-      kv = {
-        username = "ec2-user"
-        password = "DevOps321"
-      }
-    }
+    # ssh = {
+    #   secret_mount = "roboshop-infra"
+    #   kv = {
+    #     username = "ec2-user"
+    #     password = "DevOps321"
+    #   }
+    # }
   }
 }
